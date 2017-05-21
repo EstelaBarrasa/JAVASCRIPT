@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+	
+	<title>PseInt 1</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript">
+		
+		var a = prompt("escribe un número"); 
+        if (isNaN(a)){
+            var a = prompt("Lo que has introducido no es un numero, vuelve a intentarlo");
+        }
+        var b = prompt("escribe otro número");
+        if (isNaN(b)){
+            var b = prompt("Lo que has introducido no es un numero, vuelve a intentarlo");
+        }
+        var c = prompt("escribe otro número");
+        if (isNaN(c)){
+            var c = prompt("Lo que has introducido no es un numero, vuelve a intentarlo");
+        }
+
+        var suma = a + b + c;
+        var resta = a - b - c;
+        var multiplicacion = a * b * c;
+        var division = a / b / c;
+        var modulo = a % b % c;
+	</script>
+
+</head>
+
+<body>
+
+	
+	<h2>Numeros introducidos</h2><br>
+	<script type="text/javascript">
+		document.write ("El primer numero es: " + a + "<br/>")	
+        document.write ("El segundo numero es: " + b + "<br/>")
+        document.write ("El tercer numero es: " + c + "<br/>")
+	</script>
+	
+<br>
+	<div>
+		<h2>Operaciones</h2>
+		<script type="text/javascript">
+		document.write ("Suma: " + suma + "<br/>")
+        document.write ("Resta: " + resta + "<br/>")
+        document.write ("Multiplicación: " + multiplicacion + "<br/>")
+        document.write ("División: "  + division + "<br/>")
+        document.write ("Módulo: " + modulo + "<br/>")
+		</script>
+		
+	</div>
+</body>
+</html>

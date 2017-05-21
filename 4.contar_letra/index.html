@@ -1,0 +1,29 @@
+<!--pedimos una cadena de caracteres y sacamos la letra que deberia estar en la 5ª posicion comenzando por el final-->
+
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+
+<head>
+	<title>Peticiones y demas...</title>
+	
+	<script type="text/javascript">
+		//introducir la cadena de caracteres en una variable
+		cadena = prompt("Introduzca su nombre: ");
+		//calcular la longuitud de la cadena en cuestion
+		longuitud=cadena.length;
+		//alert(cadena_long); lo utilizamos si queremos comprobar si funciona o no las sentencias que utilizamos
+		
+		if((longuitud-5)<0)
+			alert("¡¡Error!!")
+		else{
+			letra=cadena.charAt(longuitud-5);
+			alert(letra)
+		}
+	</script>
+</head>
+<body>
+	
+
+</body>
+</html>

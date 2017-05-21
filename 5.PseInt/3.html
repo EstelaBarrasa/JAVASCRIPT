@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+	
+	<title>PseInt 3</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script type="text/javascript">
+		
+		var a = prompt("escribe tu edad"); 
+        if (isNaN(a)){
+            var a = prompt("Lo que has introducido no es un numero, vuelve a intentarlo");
+        }
+        
+        var b = prompt("Cuantos dias tiene un año"); 
+        if (isNaN(b)){
+            var b = prompt("Lo que has introducido no es un numero, vuelve a intentarlo");
+        }
+
+        var c = prompt("Hasta que edad quieres calcular"); 
+        if (isNaN(c)){
+            var c = prompt("Lo que has introducido no es un numero, vuelve a intentarlo");
+        }
+
+        function DiasViv(a,b)
+		{
+			dias = a*b;
+			return dias;
+		}
+
+		function DiasHasta100(a,b,c)
+		{
+			var resta = c - a;
+			var multiplicacion = resta*b;
+			return multiplicacion;
+		}
+	</script>
+		
+
+</head>
+<body>
+	<script type="text/javascript">
+		dias = DiasViv(a,b);
+		hasta100 = DiasHasta100(a,b,c);
+		alert("Has vivido "+dias+"dias.\nTe quedan "+hasta100+"dias hasta llegar a los "+c);
+	</script>
+</body> 
+</html>

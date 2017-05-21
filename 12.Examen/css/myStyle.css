@@ -1,0 +1,115 @@
+     /*style de las paginas adjuntas*/ 
+
+      body,html{
+         width: 100%;
+         height: 100%;
+         margin: 0;
+         background-image:url("one.jpg"); 
+         background-attachment: fixed;
+         background-repeat:no-repeat;
+         background-size: cover;
+      }
+
+      #completa{
+         width: 100%;
+         height: 100%;
+      }
+
+      header{
+         width: 100%;
+         height: 175px;
+      }
+      
+      #contenedorlogotexto{
+         width: 100%;
+         height: 120px; 
+      }
+
+      .titulo_logo{
+         width: 100%;
+         text-align: center;
+         float: left;
+         font-family:amarilloregular;
+         font-size: 100%;
+         color:#EDE8E8;
+      }
+
+      .limpia{
+         clear: both;
+      }
+
+      #contenido{
+         width: 100%;
+         height:100%;
+         display: block;
+      }
+
+/*capa central*/
+      section{
+         width: 100%;
+         height:100%;
+         float:center;
+        
+      }
+
+      p{
+         font-family:amarilloregular;
+         font-size: 150%;
+         color:#EDE8E8;
+         text-align: center;
+      }
+
+    
+
+@font-face {
+    font-family: 'amarilloregular';
+    src: url('myFont/amarillo-webfont.woff2') format('woff2'),
+         url('myFont/amarillo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*----------boton inicio-------------*/
+
+         * {
+            margin:0px;
+            padding:0px;
+          }
+         
+         ul, ol {
+            list-style:none;
+         }
+         
+         .nav > li {
+            
+            text-align: center
+         }
+         
+         .nav li a {
+            color:#fff;
+            text-decoration:none;
+            padding:10px 12px;
+            display:block;
+         }
+         
+         .nav li a:hover {
+            background-color:#A0BEC4;
+         }
+         
+/*-----------fin boton inicio----------------*/
+
+
+#logo2{
+         width: 20%;
+         float: center;
+}
+
+#column-right {
+    float: right;
+    overflow: hidden;
+    text-align: center;
+    width: 180px;
+}
+

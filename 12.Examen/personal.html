@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Personal</title>
+
+	<link href='images/diamante.PNG' rel='icon' type='image/png' size="16x16">
+	<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+
+<style>
+	@import url(http://fonts.googleapis.com/css?family=Lato:300);
+	* {margin: 0;padding: 0;}
+	body {background: #eee;padding: 20px;font-family: Lato, Arial, sans-serif;}
+	h2 {margin: 20px 0;font-size: 26px;}
+	p {margin: 20px 0;font-size: 18px}
+	.modal {background: rgba(0,0,0,.8);position: fixed;left: 0;bottom: 0;width: 100%;color: #FFF}
+	.modal p {padding: 20px}
+	.modal .close {position: absolute;right: 20px;top: 15px;}
+	a {color: #fff;}
+	h1 {color:black;}
+	h3{color:black}
+</style>
+</head>
+<body>
+
+<div id="completa">
+
+	<!--cabecera-->
+		<header>
+		<ul class="nav">
+            <li><a href="index.html">¡Volvamos al inicio del lujo!</a></li>
+        </ul><br>
+			<div id="contenedorlogotexto">
+				<div class="titulo_logo">
+					<h1> - Personal Top - </h1><br>
+					<h3>¡Elige que le apetece a tu BODY!</h3>
+				</div>
+				
+			</div>
+		<div class="limpia"></div>
+		<br>
+	
+	</header>
+<br><br><br>
+
+<!--cuerpo-->
+ 		<br><br><br>
+		<div id="contenido">
+	
+ 		<!--parte central-->
+		<section>
+		<center>
+			<table>
+			<tr>
+				<td>  <!--NO ME DA TIEMPO CAMBIAR LAS FOTOS QUE ME VOY A OTRO EXAMEN-->
+					<button id="myBtn1"><img src="images/moto.jpg" onmouseover="this.width=500;this.height=350; "onmouseout="this.width=350;this.height=225;" width="350" height="225" onclick="window.open('vehiculos_motos.html')";></button>
+					<p>Motocicletas</p>
+				</td>
+				
+				<td>
+					<button id="myBtn2"><img src="images/car.jpg" onmouseover="this.width=500;this.height=350; "onmouseout="this.width=350;this.height=225;" width="350" height="225" onclick="window.open('vehiculos_coches.html')"></button>
+					<p>Coches</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button id="myBtn3"><img src="images/avion.jpg" onmouseover="this.width=500;this.height=350;" onmouseout="this.width=350;this.height=225;" width="350" height="225" onclick="window.open('')"></button>
+					<p>Aviacion</p>
+				</td>
+				
+				<td>
+					<button id="myBtn4"><img src="images/barco.jpg" onmouseover="this.width=500;this.height=350;" onmouseout="this.width=350;this.height=225;" width="350" height="225" onclick="window.open('')"></button>
+					<p>Embarcaciones</p>
+				</td>
+			</tr>
+			</table>
+		</center>
+		<br>
+		<br>
+		<br>
+		<br>
+		</section>
+
+		
+	</div>
+	</div>
+
+
+<div class="modal">
+  <button class="close">cerrar</button>
+  <p>Esta web utiliza cookies para obtener datos estadísticos de la navegación de sus usuarios. Si continúas navegando consideramos que aceptas su uso. <a href="#">Más información</a></p>
+</div>
+<script src="js/jquery-2.0.3.min.js"></script> 
+<script>
+
+$('.modal .close').on('click', cierraModal);
+
+function cierraModal () {
+    $('.modal').animate({ bottom: - $('.modal').height() }, borraModal)
+}
+function borraModal () {
+    $(this).remove()
+}
+</script>
+
+<script src="script/script.js" type="text/javascript"></script>
+
+</body>
+</html>

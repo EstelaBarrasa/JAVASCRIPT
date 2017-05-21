@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+	
+	<title>PseInt 2</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	
+</head>
+
+<body>
+	<div>
+		
+	<h2>Cuantas personas son mayores y cuantas menores</h2>
+	<center><button onclick="myFunction()">Comenzar</button><br></center>
+	
+
+	<script lenguage="javascript">
+
+	function myFunction(){
+
+		var a = prompt("escribe tu edad para comparar"); 
+        if (isNaN(a)){
+        var a = prompt("Lo que has introducido no es un numero, vuelve a intentarlo");
+        }
+
+
+		var edad=new Array(20,28,27,30,19,21,32,33);
+		var i;
+		var may=0;
+		var men=0;
+
+	
+        for (i = 0; i <= array.length; i++) {
+        	if (a < array[i]){
+        		var may = may++;
+        	}
+        	else{
+        		var men = men++;
+        	}
+        }
+
+
+    document.write("Mayores: "+ may);
+	document.write("Menores: "+ men);  
+	 
+	 
+    }
+
+	</script>
+	</div>
+
+</body>
+</html>

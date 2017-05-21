@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<meta charset="utf-8">
+<head>
+    <title>Acceso a imágenes:</title> 
+    <style type="text/css">
+        #muestras img  { width: 100px; margin: 10px 30px; cursor: pointer, hand; float: left;}
+        #visor  { text-align: center; float: right; margin: 0 20px }
+        #pantalla  { width: 500px; padding: 30px; border: 5px double green; 
+            background-color: #f4f0c9; }
+    </style>
+    
+    <script type="text/javascript">
+        function muestra(num) {
+            imagen = document.images[num].src
+            comentario = document.images[num].alt
+            grande = document.images["pantalla"]
+            texto = document.getElementById("descripcion")
+            grande.src = imagen
+            texto.innerHTML = comentario
+        }
+    </script>
+</head>
+<body>
+    <center>
+    <h1>Acceso a imágenes.<br> Pulsa sobre la imagen para verla en grande</h1>
+    </center>
+    <div id="visor">
+        <h3 id="descripcion">Barca de pesca</h3>
+        <img src="muestra1.jpg" alt="Barca de pesca" id="pantalla"/>
+    </div>
+
+    <div id="muestras">
+    <br><br><br>
+        <img onclick="muestra('primera')" name="primera" src="muestra1.jpg" alt="Barca de pesca" />
+        <img onclick="muestra(2)" src="muestra2.jpg" alt="Casa de campo" />
+        <img onclick="muestra(3)" src="muestra3.jpg" alt="Papagayos" />
+        <img onclick="muestra(4)" src="muestra4.jpg" alt="Prueba de motocrós" />
+    </div>
+
+</body>
+</html>
